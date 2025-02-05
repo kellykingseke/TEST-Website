@@ -1,0 +1,121 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Club</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@popperjs/core@2.8.5/dist/umd/popper.min.js">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .news-grid {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            color: #333;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Field"></img>
+        <h1> Soccer Club</h1>
+        <p>Capture the moment!</p>
+    </div>
+
+    <nav class="navbar bg-gray-100">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><h2>Gallery</h2><button class="grid-item">Click to View</button></li>
+                <li><h2 Videos</h2><button class="grid-item">View Videos</button></li>
+                <li><h2 News</h2><button class="grid-item">Read Recent</button></li>
+                <li><h2 Contact</h2>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="container">
+        <div class="grid-container">
+            <div class="row">
+                <div>
+                    <h2>About Us</h2>
+                    <img src="https://source.unsplash.com/random/600x400?no-fill" alt="About">
+                </div>
+                <p>We are a passionate and dedicated team that believes in the power of soccer to inspire,
+innovate, and grow our community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <div class="grid-container">
+            <div class="row">
+                <div>
+                    <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Photo1">
+                    <p>Pic 1</p>
+                </div>
+                <div>
+                    <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Photo2">
+                    <p>Pic 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="container">
+        <div class="grid-container">
+            <div class="row">
+                <div>
+                    <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Video1">
+                    <p>Vic 1</p>
+                </div>
+                <div>
+                    <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Video2">
+                    <p>Vic 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="container news-grid">
+        <h3>Lands Top Three in League Ranks</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Possible third-place finish for Vicks. Looking good!</p>
+            </div>
+            <div class="col-lg-4 min-v-16">
+                <p>Check out the latest update to our player database.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Soccer Club 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.8.5/dist/umd/popper.min.js"></script>
+</body>
+</html>
+```

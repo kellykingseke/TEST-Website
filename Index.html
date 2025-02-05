@@ -1,0 +1,237 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .hero {
+            height: 72rem;
+            background-image: linear-gradient(rgba(0,0,0,0.5) 10%),
+                            rgba(0,0,0,0.5) at(48%,end);
+            background-size: 48% 48%;
+        }
+
+        .hero h1 {
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .about {
+            padding: 1rem;
+            background-color: white;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .grid-container::before,
+        .grid-container::-webkit-reverse-line,
+        .grid-container::-webkit-rotate-90,
+        .grid-container::-webkit-rotate-90-reverse-line {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 0;
+        }
+
+        .grid-item {
+            width: 25%;
+            height: 25%;
+            border: 2px solid #ddd;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .news-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .news-item {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .contact-form {
+            width: 300px;
+            max-width: 450px;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #333;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Field"></img>
+        <h1> Soccer Club</h1>
+        <p>Capture the moment!</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><h2>Gallery</h2><button class="grid-item">Click to View</button></li>
+            <li><h2 Videos</h2><button class="grid-item">View Videos</button></li>
+            <li><h2 News</h2><button class="grid-item">Read Recent</button></li>
+            <li><h2 Contact</h2>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="grid-container">
+            <div>
+                <h2>About Us</h2>
+                <img src="https://source.unsplash.com/random/600x400?no-fill" alt="About">
+            </div>
+            <p>At Soccer Club, we believe in passion, perseverance, and the beauty of soccer. We're here to
+inspire and grow, always striving for excellence.</p>
+        </div>
+    </section>
+
+    <!-- Photos/Gallery Section -->
+    <section id="gallery" class="grid-container">
+        <h3>Gallery</h3>
+        <div class="grid-item">
+            <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Photo1">
+            <p>Photo 1</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Photo2">
+            <p>Photo 2</p>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="grid-container">
+        <h3>Videos</h3>
+        <div class="grid-item">
+            <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Video1">
+            <p>Video 1</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://source.unsplash.com/random/800x600?no-fill" alt="Video2">
+            <p>Video 2</p>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-grid">
+        <h3>Nation's Greatest Hits</h3>
+        <div class="news-item">
+            <p>Lands top three in league races.</p>
+            <img src="https://source.unsplash.com/random/800x600?no-fill" alt="News">
+        </div>
+        <div class="news-item">
+            <p>Scoreless game sets tone for 2024 campaign.</p>
+            <img src="https://source.unsplash.com/random/800x600?no-fill" alt="News">
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form" class="news-grid">
+        <h3>Stay Updated</h3>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Soccer Club 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.8.5/dist/umd/popper.min.js"></script>
+</body>
+</html>
+</think>
